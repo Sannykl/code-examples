@@ -8,12 +8,8 @@ import Foundation
 import Moya
 import KeychainSwift
 
-///For RequestType
 typealias NetworkCompletion<T> = ((T?, ErrorModel?) -> ()) where T: Codable
 typealias ProgressHandler = ((CGFloat) -> ())//progress: CGFloat = 0.0 .. 1.0
-
-//For MediaRequestType
-typealias NetworkMediaCompletion = (([ObservableMediaModel]?, ErrorModel?) -> ())
 
 enum NetworkConnectionType: String {
     case wifi = "NetworkConnectionTypeWiFi"
